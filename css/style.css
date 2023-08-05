@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: #242523;
+  background: #151619;
   color: #b8bccc;
 }
 
@@ -78,3 +78,145 @@ body {
   color: #c0c4d0;
 }
 
+@media (max-width: 500px) {
+  .landing-page-container {
+    flex-direction: column;
+  }
+
+  .about-container,
+  .doorway-container {
+    width: 100%;
+  }
+
+  .doorway-link {
+    width: 65%;
+  }
+}
+
+@media (max-width: 880px) {
+  .doorway-link {
+    width: 60%;
+  }
+}
+
+/* INFO PAGE */
+
+.info-section {
+  padding: 1.8em;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.info-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+
+.info-field p,
+.info-field h3 {
+  margin: 0;
+}
+
+.map-section {
+  background: #575a85;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8em;
+  padding-bottom: 2.4em;
+}
+
+.map-section h2 {
+  text-align: center;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 3px;
+}
+
+.more-info-section {
+  padding: 1.8em;
+}
+
+.more-info-section h2 {
+  text-align: center;
+}
+
+.post-offices-section {
+  padding: 1.8em;
+}
+
+.post-offices-section h2 {
+  text-align: center;
+}
+
+.postal-search {
+  display: block;
+  width: 100%;
+  outline: none;
+  background: #151619;
+  color: #b8bccc;
+  border: 1px solid #b8bccc;
+  padding: 0.5em 1em;
+  margin-bottom: 1.8em;
+  font-size: 1.3rem;
+}
+
+.post-offices {
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+
+.post-office {
+  background: #575a85;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+@media (max-width: 965px) {
+  .post-offices {
+    font-size: 1rem;
+  }
+  .map {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .post-offices {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 615px) {
+  .info-container {
+    display: block;
+  }
+
+  .info-field {
+    margin-top: 0.9em;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .post-offices {
+    font-size: 0.8rem;
+  }
+}

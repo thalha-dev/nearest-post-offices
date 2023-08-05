@@ -13,8 +13,7 @@ async function getUserIp() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", async (e) => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", async () => {
   let ip = await getUserIp();
   ipFound.innerHTML = ip;
   localStorage.setItem("userIp", ip);
