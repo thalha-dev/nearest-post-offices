@@ -1,0 +1,80 @@
+/* COMMON STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #242523;
+  color: #b8bccc;
+}
+
+/* LANDING PAGE */
+
+.landing-page-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.about-container {
+  width: 50%;
+}
+
+.about-title {
+  color: #575a85;
+}
+
+.doorway-container {
+  background: #575a85;
+  width: 50%;
+}
+
+.doorway-container,
+.about-container {
+  padding: 1.8em;
+}
+
+.doorway h2 {
+  text-align: center;
+}
+
+.landing-img-container {
+  width: 65%;
+  margin: 3em auto;
+}
+
+.landing-img {
+  width: 100%;
+}
+
+.ip-found {
+  color: #fff;
+}
+
+.doorway-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doorway-link {
+  display: block;
+  color: #b8bccc;
+  text-decoration: none;
+  border: 1px solid #b8bccc;
+  width: 40%;
+  text-align: center;
+  padding: 0.6em 1.6em;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.doorway-link:hover,
+.doorway-link:focus {
+  color: #c0c4d0;
+}
+
